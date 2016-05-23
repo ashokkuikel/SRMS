@@ -1,0 +1,342 @@
+/* 
+    Created on : Sep 16, 2015, 2:31:17 PM
+    Author     : Yubaraj
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+} 
+
+body {
+    background: #4c320d;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 18px;
+    color: #333333;;
+}
+
+img { border: none; }
+a { color: #4c320d;  }
+a:hover { text-decoration: none; color : #000; }
+
+#wrap {
+    margin: 20px auto;
+    width: 800px;
+}
+
+.login-form{
+    border-radius: 5px;
+    margin: 200px auto auto 350px;
+    padding: 15px;
+}
+
+#header { 
+    background: #4c320d url(../images/header.jpg) no-repeat;
+    height: 100px;
+}
+#header h1 {
+    font-size: 26px;
+    font-weight: 100;
+    letter-spacing: -1px;
+    padding: 22px 0 5px 20px;
+}
+#header h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+#header h1 a:hover {
+    color: #111;
+    text-decoration: none;
+}
+#header h2 {
+    color: #ccc;
+    font-size: 15px;
+    font-weight: 100;
+    padding: 0 0 0 21px;
+    letter-spacing: -1px;
+    line-height: 12px;
+}
+
+#menu {
+    height: 30px;
+    line-height: 30px;
+    background: #4c320d url(../images/menu.jpg) no-repeat;
+}
+#menu ul {
+    padding-left: 10px;
+    list-style-type: none;
+}
+#menu ul li {
+    display: block;
+    float: left;
+    position:relative;
+}
+#menu ul li a {
+    color: #eee;
+    padding: 0 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+#menu ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.submenu {
+    display:none;
+    position:absolute;
+    width:100px;
+    left:-10px;
+
+}
+#menu .submenu li {
+    display: block;
+    clear:both;
+    height: 30px;
+    line-height: 30px;
+    background: #4c320d url(../images/sub-menu.PNG) repeat-x;
+    width: inherit;
+}
+
+#menu ul li:hover > .submenu {
+    display:block
+}
+
+#content {
+    min-height: 425px;
+    /*height: 425px;*/
+    background: #fff;
+    /*background: #4c320d url(../images/content.jpg) repeat-y;*/
+    padding: 10px 20px;
+    margin: 0 11px;
+}
+
+.left {
+    width: 588px;
+    float: left;
+    text-align: justify;
+}
+.left h2 {
+    color: #FF4800;
+    font-size: 24px;
+    letter-spacing: -3px;
+    font-weight: 100;
+    padding : 10px 0 15px 0;
+}
+
+.right {
+    width: 140px;
+    float: right;
+    font-size: 12px;
+}
+.right ul {
+    list-style-type: square;
+    padding: 5px 10px 10px 20px;
+}
+.right h2 {
+    height: 30px;
+    font-size: 12px;
+    color: #666;
+    line-height: 30px;
+}
+.right a { text-decoration: none }
+
+#top {
+    background: #555 url(../images/top.jpg) no-repeat;
+    padding: 5px 0;
+}
+#bottom {
+    background: #fff;
+    margin: 0 11px;
+    /*background: #555 url(../images/bottom.jpg) no-repeat;*/
+    padding: 10px 0;
+}
+
+#footer {
+    text-align: center;
+    color: #eee;
+    font-size: 11px;
+    padding: 0 0 10px 0;
+}
+#footer a { color: #eee; }
+
+.right-user{
+    
+}
+
+.right-user label{
+    /*float: right;*/
+    padding-right: 30px;
+    color: #fff;
+    font-size: 11.5px;
+}
+
+.right-user label a{
+    /*float: right;*/
+    /*padding-right: 30px;*/
+    color: #fff;
+    font-size: 11.5px;
+    margin: 60px;
+}
+
+
+tr.even{
+    background: #99ffff;
+}
+tr.odd{
+    background: #ccffcc;
+}
+thead{
+    background: #3185ff;
+    color: white;
+    font: bold 11px Arial, Helvetica;
+    text-align: center;
+}
+thead tr, td{
+    height: 30px;
+}
+/*thead tr{
+    height: 30px;
+}*/
+
+/*Search bar style*/
+
+#search, 
+#submit {
+    float: left;
+}
+
+#search {
+    padding: 5px 9px;
+    height: 15px;
+    width: 380px;
+    border: 1px solid #a4c3ca;
+    font: normal 13px 'trebuchet MS', arial, helvetica;
+    background: #f1f1f1;
+    /*border-radius: 50px 3px 3px 50px;*/
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) inset, 0 1px 0 rgba(255, 255, 255, 1);            
+}
+
+/* ----------------------- */
+
+#submit
+{       
+    background-color: #6cbb6b;
+    background-image: linear-gradient(#95d788, #6cbb6b);
+    /*border-radius: 3px 50px 50px 3px;*/    
+    border-width: 1px;
+    border-style: solid;
+    border-color: #7eba7c #578e57 #447d43;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 
+        0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    height: 25px;
+    margin: 0 0 0 10px;
+    padding: 0;
+    width: 90px;
+    cursor: pointer;
+    font: bold 14px Arial, Helvetica;
+    color: #23441e;    
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+
+#submit:hover {       
+    background-color: #95d788;
+    background-image: linear-gradient(#6cbb6b, #95d788);
+}   
+
+#submit:active {       
+    background: #95d788;
+    outline: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;        
+}
+
+#submit::-moz-focus-inner {
+    border: 0;  /* Small centering fix for Firefox */
+}
+
+#search::-webkit-input-placeholder {
+    color: #9c9c9c;
+    font-style: italic;
+}
+
+#search:-moz-placeholder {
+    color: #9c9c9c;
+    font-style: italic;
+}  
+
+#search:-ms-placeholder {
+    color: #9c9c9c;
+    font-style: italic;
+}
+
+.searchForm{
+    margin: 0 0 0 18px;
+}
+
+.resultDisplay{
+    margin: 0;
+    float: left;
+}
+
+.markSheet{
+    /*float: right;*/
+    /*background: #33ffff;*/
+    /*height: 300px;*/
+    margin: 20px 0 0 0;
+    padding: 100px 0 0 0;
+    /*width: 540px;*/
+    /*border-radius: 10px 10px 10px 10px;*/
+}
+
+.resultInfo{
+    margin: -50px 0 0 30px;
+    font: bold 11px Arial, Helvetica;
+}
+
+.resultInfo label{
+    display: block;
+    margin: 5px;
+}
+
+/*.marks{
+    margin: 50px 0 0 0 ;
+    width: 85%;
+    height: 200px;
+    margin: 0 auto;
+}*/
+
+.marksFooter{
+    float: right;
+    margin: 0 30px 0 0;
+}
+
+.marksFooter label{
+    display: block;
+    margin: 5px;
+}
+
+.buttonClass{
+    background: #EB3B88;
+    border: 1px solid #C94A81;
+    padding: 5px 15px 5px 15px;
+    color: #FFCBE2;
+}
+
+.details-header{
+    background-color: #FF4800;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+table{
+    margin: 0 auto;
+    width: 700px;
+}
+
+.user-manual{
+    margin: 22px 33px;
+    height: 375px;
+    width: 650px;
+}
