@@ -49,7 +49,7 @@ public class ResultPrinter {
         Document document = new Document();
         try {
             
-            File file=new File("MarkSheet.pdf");
+            File file=new File("MarkSheet_"+rollNo+".pdf");
             
             PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(file));
             document.open();
