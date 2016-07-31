@@ -46,18 +46,6 @@ public class StudentRegisterServlet extends HttpServlet {
         } catch (InvocationTargetException ex) {
             Logger.getLogger(StudentRegisterServlet.class.getName()).log(Level.SEVERE, null, ex);
         }
-
-//        studentDto.setsFirstName(request.getParameter("firstName"));
-//        studentDto.setsMiddleName(request.getParameter("middleName"));
-//        studentDto.setsLastName(request.getParameter("lastName"));
-//        studentDto.setsMobileNumber(request.getParameter("mobileNumber"));
-//        studentDto.setsEmail(request.getParameter("email"));
-//        studentDto.setsAddress(request.getParameter("address"));
-//        studentDto.setsDOB(request.getParameter("dateOfBirth"));
-//        studentDto.setGender(SMSUtils.getGender(request.getParameter("gender")));
-//        studentDto.setSemester(Integer.parseInt(request.getParameter("semester")));
-//        studentDto.setCourse(request.getParameter("course"));
-        
         Manager manager = new DatabaseManager(applicationUser);
         Student student = manager.registerStudent(studentDto);
         if (student == null) {

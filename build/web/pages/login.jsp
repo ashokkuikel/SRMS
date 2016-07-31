@@ -10,8 +10,6 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="Content-Language" content="English" />
-        <link rel="stylesheet" type="text/css" href="../css/form.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen" />
     </head>
     <body>
         <div class="form-style">
